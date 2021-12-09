@@ -1,0 +1,25 @@
+{
+  "name": "pocketpod",
+  "version": "1.0.0",
+  "description": "Inspired by BA Podcasts",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
+	"build-css" : "npx tailwindcss -i ./src/tailwind.css -o ./public/css/styles.css"
+  },
+  "keywords": [],
+  "author": "Access Denied",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
+  }
+}
