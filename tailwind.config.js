@@ -1,16 +1,16 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./views/**/*.{ejs,html}"],
   theme: {
     extend: {
-		colors: {
-			'main-green' : "#17241F",
-			'secondary-yellow' : "#E8F369",
-		},
-	},
-  },
-  variants: {
-    extend: {},
+      colors: {
+        "main-green": "#17241F",
+        "secondary-green": "#0A4819",
+        "secondary-yellow": "#E8F369",
+      },
+      fontFamily: {
+        Aventra: ["Aventra"],
+      },
+    },
   },
   plugins: [],
-}
+};
