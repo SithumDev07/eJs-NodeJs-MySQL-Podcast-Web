@@ -1,0 +1,19 @@
+<div class="trending-card w-[350px] h-[240px] relative px-5 py-7 flex flex-col bg-gray-50 mx-10">
+	<%# SVG %>
+	<% switch(icon) {
+		case 'hashtag': %>		
+			<%- include('./icons/hashtag') %>
+			<% break; %>
+		<% default: %>
+			<%- include('./icons/box') %>
+			<% break;
+	
+	}%>
+	<h3 class="text-3xl font-bold text-gray-800 mt-3 mb-4">
+		<%= title %>
+	</h3>
+	<p class="text-gray-600 font-thin">
+		<%= description %>
+	</p>
+	<a href="/episodes" class="underline decoration-main-green mt-4 text-xl">See All Episodes</a>
+</div>

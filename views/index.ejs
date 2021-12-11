@@ -45,7 +45,8 @@
         <%- include('./partials/home-button', { color: "#FF6533", top: "t-28", title: "Amazing Feature" }) %>
       </div>
     </header>
-	<main class="container mx-auto bg-gray-200 py-14 font-Aventra">
+	<main class="bg-gray-200 py-14 font-Aventra w-full">
+		<div class="container mx-auto">
 		<div class="w-full flex flex-col items-center">
 			<h1 class="text-5xl font-semibold text-gray-700 w-4/5 text-center">Discover your favourite podcats or host effortlessly.</h1>
 			<p class="mt-3 mb-4 text-center text-gray-600">But it’s only available in the Spotify app. Download it now to discover more.</p>
@@ -58,6 +59,21 @@
 				</button>
 			</div>
 		</div>
+		<div class="flex items-center justify-center py-16">
+		<%- include('./partials/trending-card', {
+			icon: "hashtag",
+			title: "Trending Podcasts",
+			description: "Explore exclusive podcasts in your favourite way."
+		}) %>
+		<%- include('./partials/trending-card', {
+			icon: "box",
+			title: "Trending Episodes",
+			description: "Explore new episodes, while you do anything."
+		}) %>
+		</div>
+		</div>
 	</main>
+	<%- include('./partials/podcast-play') %>
+	<%- include('./partials/footer') %>
   </body>
 </html>
